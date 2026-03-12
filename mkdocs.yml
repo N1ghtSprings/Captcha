@@ -1,0 +1,6 @@
+site_name: CAPTCHA
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - CAPTCHA Trigger Rules: captcha-trigger-rules.md
