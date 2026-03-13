@@ -1,6 +1,7 @@
 site_name: Service
 repo_url: https://github.com/N1ghtSprings/Captcha
 repo_name: N1ghtSprings/Captcha
+edit_uri: edit/main/docs/
 plugins:
   - search
   - git-revision-date-localized:
