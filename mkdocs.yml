@@ -1,6 +1,39 @@
-site_name: CAPTCHA
+site_name: Service
+repo_url: https://github.com/N1ghtSprings/Captcha
+repo_name: N1ghtSprings/Captcha
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
 theme:
   name: material
+  features:
+    - content.action.edit
+    - content.action.view
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 nav:
   - Home: index.md
-  - CAPTCHA Trigger Rules: captcha-trigger-rules.md
+  - Security:
+    - Bot Protection Overview: security/bot-protection-overview.md
+    - CAPTCHA Trigger Rules: security/captcha-trigger-rules.md
+    - IP Blacklist Management: security/ip-blacklist-management.md
+  - Admin Panel:
+    - Manual CAPTCHA Controls: admin/manual-captcha-controls.md
+    - Rate Limiting Overview: admin/rate-limiting-overview.md
