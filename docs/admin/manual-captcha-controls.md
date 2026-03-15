@@ -29,6 +29,9 @@ Manual overrides take precedence over the automatic rules - an endpoint with a m
 
 The override takes effect immediately.
 
+!!! warning
+    Manual overrides do not expire automatically. Remember to disable the override once it is no longer needed. See [Disabling a Manual Override](#disabling-a-manual-override).
+
 > [PLACEHOLDER: Screenshot - "Add Override" dialog with Scope, Reason, and Notify fields]
 
 ## Disabling a Manual Override
@@ -64,6 +67,7 @@ All manual CAPTCHA changes are recorded in the audit log.
 > [PLACEHOLDER: Screenshot - Audit log filtered to CAPTCHA override events]
 
 ## Related Resources
+- [Bot Protection Overview](../security/bot-protection-overview.md)
 - [CAPTCHA Trigger Rules](../security/captcha-trigger-rules.md)
 - [IP Blacklist Management](../security/ip-blacklist-management.md)
 - [Rate Limiting Overview](rate-limiting-overview.md)

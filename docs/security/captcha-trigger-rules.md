@@ -147,11 +147,12 @@ Upon successful completion of the CAPTCHA, the user's request is processed norma
 !!! note "For Support & Ops Specialists"
     - If a user reports an unexpected CAPTCHA, check whether their IP appears in the blacklist first (Rule 2), then review whether a traffic spike event was active at the time (Rule 3).
     - Rule 1 and Rule 4 are behavioral - they reset when the respective time window expires.
+    - Rule 3 resets at the start of each new hourly bucket.
     - Manual overrides (Rule 5) persist until explicitly removed by an admin.
 
 ## Limitations
-- [Rule 3](../security/captcha-trigger-rules.md#rule-3-anomalous-traffic-volume) (traffic spike) can cause legitimate users to encounter CAPTCHAs during unexpected but genuine traffic surges (e.g., a product launch or viral event).
-- IP-based rules ([Rule 1](../security/captcha-trigger-rules.md#rule-1-ip-request-volume), [Rule 2](../security/captcha-trigger-rules.md#rule-2-ip-blacklist-match)) may affect multiple users sharing a NAT gateway or corporate proxy.
+- [Rule 3](#rule-3-anomalous-traffic-volume) (traffic spike) can cause legitimate users to encounter CAPTCHAs during unexpected but genuine traffic surges (e.g., a product launch or viral event).
+- IP-based rules ([Rule 1](#rule-1-ip-request-volume), [Rule 2](#rule-2-ip-blacklist-match)) may affect multiple users sharing a NAT gateway or corporate proxy.
 
 ## Related Resources
 

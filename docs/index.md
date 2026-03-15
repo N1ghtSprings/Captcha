@@ -6,7 +6,7 @@ If you are a developer looking for API references or integration guides, see [Li
  
 ## What This Service Does
  
-[PLACEHOLDER: 2-3 sentence description of what the service is and who uses it.]
+> [PLACEHOLDER: 2-3 sentence description of what the service is and who uses it.]
  
 ## How to Use These Docs
  

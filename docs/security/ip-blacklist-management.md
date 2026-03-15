@@ -76,3 +76,4 @@ All changes to the blacklist are recorded in the audit log. To view:
 - [Bot Protection Overview](bot-protection-overview.md)
 - [CAPTCHA Trigger Rules](captcha-trigger-rules.md)
 - [Manual CAPTCHA Controls](../admin/manual-captcha-controls.md)
+- [Rate Limiting Overview](../admin/rate-limiting-overview.md)
